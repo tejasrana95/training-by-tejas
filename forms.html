@@ -13,9 +13,10 @@
       <a href="/forms.html" aria-current="page">Forms</a>
     </nav>
     <main>
-      <form>
+      <form action="" method="GET">
         <div>
-          <input type="text" name="text" placeholder="Text Example" />
+          <input type="text" name="text" placeholder="Text Example" />Text
+          Example
         </div>
         <div>
           <input type="email" name="email" placeholder="email Example" />
@@ -32,18 +33,26 @@
         </div>
 
         <div>
-          <input type="radio" name="gender" value="M" id="gender" />
-          <label for="gender">Male Radio Button</label>
-          <input type="radio" name="gender" value="F" /> Female Radio Button
+          <input type="radio" name="gender" value="M" id="maleGender" />
+          <label for="maleGender">Male Radio Button</label>
+          <input type="radio" name="gender" value="F" id="female" />
+          <label for="female">Female Radio Button</label>
         </div>
+
         <fieldset>
-          <legend>Example of Legend:</legend>
-          <div><input type="range" /> Range Selector</div>
-          <div><input type="time" /> Time Selector</div>
-          <div><input type="date" /> Date Selector</div>
-          <div><input type="number" /> Number Input</div>
+          <legend>Personal Information:</legend>
+          <div>
+            <input type="range" name="rangeSelector" value="10" /> Range
+            Selector
+          </div>
+          <div><input type="time" name="time" /> Time Selector</div>
+          <div><input type="date" name="dateselector" /> Date Selector</div>
+          <div><input type="number" name="numberSelector" /> Number Input</div>
+        </fieldset>
+        <fieldset>
+          <legend>Educational Information:</legend>
           <div><input type="file" /> File Upload</div>
-          <div><input type="color" /> Color Selector</div>
+          <div><input type="color" name="colorSelector" /> Color Selector</div>
           <div><input type="checkbox" /> Checkbox Selector</div>
           <div><input type="search" /> Search Input</div>
           <div>
@@ -56,7 +65,7 @@
           <div><textarea placeholder="Textarea"></textarea></div>
           <div>
             <label for="meter">Meter progress:</label>
-            <meter value="0.55" id="meter"></meter>
+            <meter value="0.5" id="meter"></meter>
           </div>
           <div>
             <label for="cars">Choose a car:</label>
@@ -84,10 +93,11 @@
             </datalist>
           </div>
           <div>
-            <label for="file">Downloading progress:</label>
-            <progress id="file" value="32" max="100">32%</progress>
+            <label for="file">Upload progress:</label>
+            <progress id="file" value="50" max="100">32%</progress>
           </div>
         </fieldset>
+
         <div>
           <button type="button">Simple Button</button>
           <button type="submit">Submit Button</button>
