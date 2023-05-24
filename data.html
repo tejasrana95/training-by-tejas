@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Other page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="/" aria-current="page">Home</a>
+    <a href="/forms.html">Forms</a>
+    <a href="/page.html">Page</a>
+    <a href="/registration.html">Registration</a>
+  </nav>
+  <main>
+    
+      <div class="container">
+        <h1>Register</h1>
+        <p>Come as a guest, Stay as family.</p>
+        <hr />
+        <input type="checkbox" name="active" value="false" onchange="updateRecords(event)">Show Active only
+     <table border="1" class="table">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Phone</th>
+        <th>Picture</th>
+        <th>Friends Count</th>
+      </tr>
+      <tbody id="tableData">
+        </tbody>
+
+      </table>
+
+
+    </main>
+    <script src="script.js"></script>
+
+  </body>
+</html>
